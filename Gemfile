@@ -36,8 +36,12 @@ gem 'sidekiq-cron', '~> 1.1'
 
 gem 'simple_form'
 
+gem 'blueprinter'
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
+
+gem 'faker'
 
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]

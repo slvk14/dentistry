@@ -1,2 +1,5 @@
-class ClientsController < ActionController::Base
+class ClientsController < UsersController
+  def user_type
+    'Client'
+  end
 end

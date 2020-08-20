@@ -6,8 +6,8 @@ class AppointmentBlueprint < ApplicationBlueprint
   fields :appointment_date
 
   view :complete do
-    association :client, ClientBlueprint
-    association :doctor, DoctorBluePrint
-    association :procedure, ProcedureBlueprint
+    association :client, blueprint: ClientBlueprint
+    association :doctor, blueprint: DoctorBlueprint
+    association :procedure, blueprint: ProcedureBlueprint
   end
 end

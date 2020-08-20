@@ -4,5 +4,10 @@ Rails.application.routes.draw do
   devise_for :users
   mount Sidekiq::Web => '/sidekiq'
 
-  # root to:
+  root to: 'clients#index'
+
+  resources :clients
+  resources :doctors
+  resources :procedures
+  resources :appointments
 end
