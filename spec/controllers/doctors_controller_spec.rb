@@ -63,7 +63,7 @@ describe DoctorsController, type: :controller do
 
   describe '#PUT update' do
     context 'valid request' do
-      let(:do_request) { put :update, params: { id: doctor.id,  first_name: 'new_name' } }
+      let(:do_request) { put :update, params: { id: doctor.id, first_name: 'new_name' } }
 
       it 'should return response status 200' do
         do_request

@@ -11,4 +11,3 @@ FactoryBot.define do
     description { Faker::Name.unique.name }
   end
 end
-

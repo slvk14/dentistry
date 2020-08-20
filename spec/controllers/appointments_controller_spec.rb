@@ -43,7 +43,7 @@ describe AppointmentsController, type: :controller do
 
   describe '#POST create' do
     context 'valid request' do
-      let(:do_request) { post :create, params: { client_id: client.id, doctor_id: doctor.id, procedure_id: procedure.id, appointment_date: DateTime.now} }
+      let(:do_request) { post :create, params: { client_id: client.id, doctor_id: doctor.id, procedure_id: procedure.id, appointment_date: DateTime.now } }
 
       it 'should return response status 200' do
         Appointment.destroy_all
@@ -63,7 +63,7 @@ describe AppointmentsController, type: :controller do
 
   describe '#PUT update' do
     context 'valid request' do
-      let(:do_request) { put :update, params: { id: appointment.id,  doctor_id: doctor2.id } }
+      let(:do_request) { put :update, params: { id: appointment.id, doctor_id: doctor2.id } }
 
       it 'should return response status 200' do
         do_request

@@ -21,13 +21,13 @@ class ProceduresController < ApplicationController
     if (record = Procedure.create(permitted_params))
       render json: ProcedureBlueprint.render(record)
     else
-      render_custom_error("Unable to create a record with such params")
+      render_custom_error('Unable to create a record with such params')
     end
   end
 
   def destroy
     if @record.destroy
-      render json: {'200' => 'Successfully destroyed'}
+      render json: { '200' => 'Successfully destroyed' }
     else
       render_custom_error("Unable to destroy the record with id #{params[:id]}")
     end
